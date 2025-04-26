@@ -41,7 +41,6 @@
                    <TextBox Height="30" Text="{Binding Instructions}" VerticalAlignment="Top" HorizontalAlignment="Stretch" BorderThickness="3" BorderBrush="#404040" />
                </StackPanel>
            </Grid>
-           <Button Content="Add" Command="{Binding AddRecipeCommand}" Click="CancelClick" Width="90" Margin="4" FontWeight="DemiBold" Background="#A76545" BorderThickness="3" BorderBrush="#404040"/>
            <Button Content="Cancel" Click="CancelClick" Width="90" Margin="2" FontWeight="DemiBold" Background="#A76545" BorderThickness="3" BorderBrush="#404040"/>
        </StackPanel>
    </Grid>

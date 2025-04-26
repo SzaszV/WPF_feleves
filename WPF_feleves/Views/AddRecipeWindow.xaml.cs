@@ -15,6 +15,9 @@ using WPF_feleves.ViewModels;
 
 namespace WPF_feleves.Views
 {
+    /// <summary>
+    /// Interaction logic for AddRecipeWindow.xaml
+    /// </summary>
     public partial class AddRecipeWindow : Window
     {
         public AddRecipeWindow()

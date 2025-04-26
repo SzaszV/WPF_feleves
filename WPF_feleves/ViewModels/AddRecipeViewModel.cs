@@ -31,9 +31,16 @@ namespace WPF_feleves.ViewModels
         }
         private void AddRecipe(object obj)
         {
-            var trimmedIngredients = Ingredients.Select(ingredient => ingredient?.Trim()).ToList(); 
             RecipeManager.AddRecipe(new Recipe() { Name = Name, Ingredients = trimmedIngredients, Instructions = Instructions });
         }
+      /*  private void AddRecipe(object obj)
+        {
+            foreach (var ingredient in Ingredients)
+            {
+                Ingredients.Add(ingredient.Trim());
+            }
+            RecipeManager.AddRecipe(new Recipe() { Name = Name, Ingredients = Ingredients, Instructions = Instructions });
+        }*/
         private void AddIngredient(object? parameter)
         {
             if (!string.IsNullOrWhiteSpace(NewIngredient))
